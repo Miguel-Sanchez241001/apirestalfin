@@ -93,7 +93,7 @@ Swagger UI se encuentra habilitado para explorar los endpoints disponibles:
 ```plaintext
 http://localhost:8080/v3/swagger-ui.html
 ```
-
+![img_4.png](img_4.png)
 ## Endpoints Principales
 
 ### 1. Registro de Usuario (`/auth/signUp`)
