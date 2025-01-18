@@ -1,0 +1,30 @@
+spring:
+  main:
+    web-application-type: reactive
+  r2dbc:
+    url: r2dbc:h2:file:///./db_trxCambio
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+  logging:
+    level:
+      root: INFO
+      pe.com.alfin: INFO
+  application:
+    name: appCambios
+server:
+  port: 8080
+
+jwt:
+  secret: aEIu9S7cvZUnPJWezau3rKUCxj4BLtpCVzhVSyam93prJOxofs7688P0OD5tmTIsLL6u7G9HpXvT
+  expiration:
+    days: 0
+    hours: 0
+    minutes: 15
+    seconds: 0
+springdoc:
+  api-docs:
+    path: /v3/swagger-ui.html
+  swagger-ui:
+    path: /v3/api-docs
